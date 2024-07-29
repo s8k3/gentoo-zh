@@ -55,6 +55,10 @@ S="${WORKDIR}/${PN}-${MY_PV}"
 
 MY_CMAKE_PROJECT="client "
 
+PATCHES=(
+	"${FILESDIR}/kvmfr-6.10.patch"
+)
+
 src_prepare() {
 	default
 	# add other project
